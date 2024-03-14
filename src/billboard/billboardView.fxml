@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billboard.billboardViewController">
+   <children>
+      <ImageView fitHeight="527.0" fitWidth="620.0" layoutX="-10.0" layoutY="-6.0" pickOnBounds="true">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="193.0" text="Bill Board">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chkpaid" layoutX="42.0" layoutY="65.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" text="Paid">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chkpending" layoutX="134.0" layoutY="65.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="109.0" text="Pending">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="320.0" layoutY="67.0" text="Mobile">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="89.0" layoutY="101.0" mnemonicParsing="false" onAction="#doSearch" prefHeight="34.0" prefWidth="66.0" text="Search">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="238.0" layoutY="475.0" mnemonicParsing="false" onAction="#doExport" prefHeight="34.0" prefWidth="66.0" text="Export">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtMobile" layoutX="391.0" layoutY="67.0" prefHeight="27.0" prefWidth="150.0" promptText="Enter Mobile" />
+      <TableView fx:id="tbldata" layoutX="24.0" layoutY="143.0" prefHeight="297.0" prefWidth="526.0" />
+      <Button layoutX="346.0" layoutY="101.0" mnemonicParsing="false" onAction="#dohistory" prefHeight="34.0" prefWidth="99.0" text="Bill History">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="338.0" layoutY="441.0" text="Total Amount">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAmt" layoutX="459.0" layoutY="441.0" prefHeight="27.0" prefWidth="66.0" />
+      <Label layoutX="530.0" layoutY="441.0" text="Rs.">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

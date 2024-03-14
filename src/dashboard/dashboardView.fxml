@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.dashboardViewController">
+   <children>
+      <ImageView fitHeight="619.0" fitWidth="719.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@dashboard1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="228.0" layoutY="24.0" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="113.0" fitWidth="112.0" layoutX="34.0" layoutY="91.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@paperMaster.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="113.0" fitWidth="112.0" layoutX="343.0" layoutY="91.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@diplayHawker.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="39.0" layoutY="209.0" mnemonicParsing="false" onAction="#openPaperMaster" prefHeight="27.0" prefWidth="96.0" text="Paper Master">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="187.0" layoutY="209.0" mnemonicParsing="false" onAction="#openHawkerManager" prefHeight="27.0" prefWidth="121.0" text="Hawker Master">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="338.0" layoutY="209.0" mnemonicParsing="false" onAction="#openDisplayHawker" prefHeight="27.0" prefWidth="121.0" text="Display Hawker">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="113.0" fitWidth="112.0" layoutX="512.0" layoutY="91.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@customer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="113.0" fitWidth="112.0" layoutX="39.0" layoutY="250.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@finduser.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="113.0" fitWidth="112.0" layoutX="188.0" layoutY="250.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@billGenerator.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="113.0" fitWidth="112.0" layoutX="343.0" layoutY="250.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@billCollector.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="507.0" layoutY="209.0" mnemonicParsing="false" onAction="#openCustomerManager" prefHeight="27.0" prefWidth="121.0" text="Customer Master">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="365.0" mnemonicParsing="false" onAction="#openCustomerSearch" prefHeight="27.0" prefWidth="129.0" text="Cusmtomer Seacrh">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="187.0" layoutY="365.0" mnemonicParsing="false" onAction="#openBillGenerator" prefHeight="27.0" prefWidth="121.0" text="Bill Generator">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="338.0" layoutY="365.0" mnemonicParsing="false" onAction="#openBillCollector" prefHeight="27.0" prefWidth="121.0" text="Bill Collector">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="113.0" fitWidth="112.0" layoutX="512.0" layoutY="250.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@billStatus.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="113.0" fitWidth="112.0" layoutX="186.0" layoutY="409.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@aboutUs.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="113.0" fitWidth="112.0" layoutX="363.0" layoutY="409.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@logout.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="491.0" layoutY="365.0" mnemonicParsing="false" onAction="#openBillStatus" prefHeight="27.0" prefWidth="121.0" text="Bill Status">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="183.0" layoutY="522.0" mnemonicParsing="false" onAction="#openAboutUs" prefHeight="27.0" prefWidth="121.0" text="About Us">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnlogout" layoutX="358.0" layoutY="522.0" mnemonicParsing="false" onAction="#doLogout" prefHeight="27.0" prefWidth="121.0" text="Logout">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="113.0" fitWidth="112.0" layoutX="192.0" layoutY="91.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@hawker.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
